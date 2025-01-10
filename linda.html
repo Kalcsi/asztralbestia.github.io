@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+    <head lang="hu">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+
+        <title>Linda</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/linda.css">
+        
+    </head>
+    <body>
+
+        <!--Menü és cím-->
+        <div id="fix">
+
+            <!--CÍM-->
+            <div id="felso"> 
+                <button id="hamburger" >&#9776;</button>
+                <h1>A hercegnőmnek</h1>
+            </div>
+
+            <!--MENÜ-->
+            <ul id="menü" >
+                <li><button class="menü" id="nagyongomb">Nagyon</button></li>
+                <li><button class="menü" id="szeretlekgomb">Szeretlek</button></li>
+                <li><button class="menü" id="tégedgomb">Téged</button></li>
+                <li><button class="menü" id="szivecskegomb">&#10084;</button></li>
+            </ul>
+        </div>
+
+
+        <!--"Nagyon" gombtól lenyíló rész-->
+        <div id="nagyon">
+
+            <!--KÉRDÉS-->
+            <div id="nagyon_cim"><h2 id="par">Melyik a legjobb páros?</h2></div>
+
+            <!--KÉPEK-->
+            <div id="nagyon_kepek">
+
+                <!--LEBRON ÉS SAVANNAH-->
+                <figure>
+                    <button class="nagyon" id="nagyonbron"><img class="n_kep" src="css/kep_css/bron_savannah.jpg" alt="LeBron James és a felesége Savannah"></button>
+                    <figcaption>LeBron és Savannah</figcaption>
+                </figure>
+
+                <!--MORDECAI ÉS CJ-->
+                <figure>
+                    <button class="nagyon" id="nagyonmordo"><img class="n_kep" src="css/kep_css/mordo_cj.jpg" alt="Mordecai és a barátnője CJ"></button>
+                    <figcaption>Mordecai és CJ</figcaption>
+                </figure>
+
+                <!--MI-->
+                <figure>
+                    <button class="nagyon" id="nagyonmi"><img class="n_kep" src="css/kep_css/linda_dani.jpg" alt="Erőss Dániel és a felesége Linda"></button>
+                    <figcaption>Mi</figcaption>
+                </figure>
+            </div>
+
+            <!--VÁLASZ-->
+            <div><p id="válasz"></p></div>
+        </div>
+
+
+
+        <!--"Szeretlek" gombtól lenyíló rész-->
+        <div id="szeretlek" class="rejt">
+            <br><br>
+            <br><br>
+
+            <!--KÉRDÉSEK-->
+            <form> 
+                <input id="sz_nev"type="text" class="sz_input" placeholder="Teljes név"><br><p id="sz_nev_hiba" class="sz_hiba"></p><br><br><br>
+                <input id="sz_date" type="text" class="sz_input" placeholder="Születési dátum(hh/nn/eeee)"><br><p id="sz_date_hiba" class="sz_hiba"></p><br><br><br>
+                <input id="sz_tel" type="tel"class="sz_input" placeholder="Telefonszám (+36000000000)"><br><p id="sz_tel_hiba" class="sz_hiba"></p><br><br><br>
+                <input id="sz_fiu"type="text" class="sz_input" placeholder="A  legcukibb  fiú  keresztneve"><p id="sz_fiu_hiba" class="sz_hiba"></p>
+            </form>
+
+
+            <p id="ellenőrzés" class="rejt"></p>
+
+           
+            <br><br>
+        </div>
+
+
+        <!--"Téged" gombtól lenyíló rész-->
+        <div id="téged" class="rejt">
+
+            <h2 id="mentsd" class="mentsd">Mentsd meg a hercegnőt!!</h2><br>
+            <div id="maze">
+        
+
+                <!--1. SOR-->
+                        <div class="cell player"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+        
+                <!--2. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                <!--3. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                <!--4. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                <!--5. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <!--6. SOR-->
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                <!--7. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                <!--8. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                <!--9. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                <!--10. SOR-->
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <!--11. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell goal" id="vég"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                <!--12. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                <!--13. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                <!--14. SOR-->
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                <!--15. SOR-->
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <!--16. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                <!--17. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                <!--18. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                <!--19. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                <!--20. SOR-->
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell wall"></div>
+                        <div class="goal-area">
+                            <img src="css/kep_css/kiralyno.png">
+                        </div>
+                    </div>
+        </div>
+
+
+        <!--"Szivecske" gombtól lenyíló rész-->
+        <div id="szivecske">
+            <img class="sz_kep" src="kep/linda/Messenger_creation_992a5f46-4f61-4db7-970a-a8dccce2a0df.jpeg">
+            <img class="sz_kep" src="kep/linda/IMG_20240227_151548.jpg">
+            <img class="sz_kep" src="kep/linda/IMG_20240829_173442_462.jpg">
+            <img class="sz_kep" src="kep/linda/IMG_20241129_202014.jpg"><br>
+            <img class="sz_kep" src="kep/linda/Messenger_creation_0F4D3318-33B3-41DD-9AED-4D4FAD315DF7.jpeg">
+            <img class="sz_kep" src="kep/linda/Messenger_creation_2A465B6D-D6E4-401A-8C2F-45A104E1C047.jpeg">
+            <img class="sz_kep" src="kep/linda/Messenger_creation_5058ED83-9114-4F90-9D5E-ABDC86BE6807.jpeg">
+            <img class="sz_kep" src="kep/linda/Messenger_creation_73903759-249E-4549-890E-8D80EB37C15A.jpeg"><br>
+            <img class="sz_kep" src="kep/linda/Messenger_creation_9a9f22c5-030a-469b-9df9-9baf1328a854.jpeg">
+            <img class="sz_kep" src="kep/linda/Messenger_creation_B5F664B9-FA3C-4616-9E4C-527902A52B16.jpeg">
+            <img class="sz_kep" src="kep/linda/Messenger_creation_D9662BCE-0E08-4B20-BF6D-45898D9C0CB4.jpeg">
+            <img class="sz_kep" src="kep/linda/received_1069002408309805.jpeg"><br>
+            <img class="sz_kep" src="kep/linda/received_1396554157638597.jpeg">
+            <img class="sz_kep" src="kep/linda/received_585424410632924.jpeg">
+            <img class="sz_kep" src="kep/linda/received_606730631685351.jpeg">
+            <img class="sz_kep" src="kep/linda/received_797857705723547.jpeg">
+        </div>
+
+        <script src="script/linda.js"></script>
+    </body>
+</html>

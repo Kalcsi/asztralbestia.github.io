@@ -1,0 +1,289 @@
+body{
+    background-image: url(kep_css/linda-hatter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+    height:77vh;
+    scroll-behavior: smooth;
+    font-size:16x;
+    text-align: center;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+#hamburger{
+    width:40px;
+    height:30px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    font-size:50px;
+}
+#felso{
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    padding:0 20px;
+    background-color: rgb(240, 194, 194);
+    border:solid rgb(240, 194, 194) 20px;
+}
+h1{
+    margin:auto;
+    text-align: center;
+    font-style: italic;
+    font-family: Lavishly Yours;
+    font-size: 2em;
+}
+.lavishly-yours-regular {
+    font-family: "Lavishly Yours", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+#content{
+    background-image: url(kep/linda-hatter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menü{
+    background-color: rgb(240, 194, 194);
+    color:rgb(0, 0, 0);
+    border: none;
+    z-index:1;
+    min-height: 40px;
+    display:block;
+    margin: 25px auto 25px auto;
+    cursor: pointer;
+    font-family: Lavishly Yours;
+    font-weight: bold;
+    font-size: 40px;
+}
+#menü{
+    list-style: none;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:77vh;
+    text-align:center;
+    background-color:rgb(240, 194, 194);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    display:none;
+    z-index: 1;
+    position:absolute
+}
+
+#menü li{
+    width:100%;
+    border-bottom: 1px solid;
+}
+#menü li:last-child{
+    border-bottom: none;
+}
+#menü.show{
+    display:block;
+    animation: slideIn 0.5s ease forwards;
+}
+#menü.hide{
+    animation: slideOut 0.5s ease forwards;
+}
+@keyframes slideIn{
+    from{
+        transform:translateX(-100%) ;
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes slideOut{
+    from{
+        transform:translateX(0) ;
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#nagyon{
+    display:none;
+}
+#nagyon_kepek{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.n_kep{
+    height:300px;
+    border-radius: 30px;
+    align-items: center;
+    width:100%;
+
+}
+@media screen and(max-width:768px){
+    body{
+        font-size: 14px;
+        padding: 10px;
+    }
+    h1{
+        font-size:1.5em;
+    }
+}
+.nagyon{
+    background:none;
+    border:none;
+    cursor:pointer;
+    display:block;
+}
+#nagyon_cim{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Lavishly Yours;
+}
+figure{
+    text-align: center;
+    margin:0 5px
+}
+figcaption{
+    font-family: Lavishly Yours;
+    font-weight: bold;
+    font-size: 30px;
+}
+#válasz{
+    display:none;
+    text-align: center;
+}
+.rossz{
+    color:red;
+    animation:shake 2s;
+    font-family: cursive;
+    font-weight: bold;
+    font-size:50px;
+    margin-top: 1px;
+    font-family: Lavishly Yours;
+}
+.jo{
+    color:green;
+    animation:fadeIn 1s;
+    font-family: cursive;
+    font-weight: bold;
+    font-size:50px;
+    margin-top: 1px;
+    font-family: Lavishly Yours;
+}
+@keyframes shake{
+    0%{transform:translate(0);}
+    10%{transform:translate(-8px);}
+    20%{transform:translate(8px);}
+    30%{transform:translate(-8px);}
+    40%{transform:translate(8px);}
+    50%{transform:translate(-8px);}
+    60%{transform:translate(8px);}
+    70%{transform:translate(-8px);}
+    80%{transform:translate(8px);}
+    90%{transform:translate(-8px);}
+    100%{transform:translate(0);}
+}
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+@keyframes moveDown{
+    from{transform:translateY(-50px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+.sz_input{
+    background-color:rgb(240, 194, 194);
+    border-color:rgb(255, 253, 253);
+    border-radius:20px;
+    width:80%;
+    max-width: 300px;
+    height:40px;
+    text-align:center;
+    font-size:25px;
+    font-family:Lavishly Yours;
+    font-weight:bold;
+    color:black;
+
+}
+.sz_input::placeholder{
+    font-size:25px;
+    font-family:Lavishly Yours;
+    font-weight:bold;
+    color:black
+}
+.rejt{
+    display:none
+}
+.sz_hiba{
+    font-family: Lavishly Yours;
+    font-weight: bold;
+    color:red;
+    font-size:30px
+}
+#ellenőrzés{
+    font-family: Lavishly Yours;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(119, 88, 88);
+}
+.sz_kep{
+    height:200px;
+    margin: 3px 5px 3px 5px;
+    border-radius: 50px;
+    border:solid 4px white
+}
+#maze{
+    display:grid;
+    grid-template-columns: repeat(20,23px);
+    margin:20px auto;
+    position:relative;
+    margin: 1px 35%;
+}
+.cell{
+    width:23px;
+    height:23px;
+    background-color: rgb(240, 194, 194);
+
+}
+.wall{
+    background-color: rgb(87, 52, 52);
+}
+.player{
+    background-color:rgb(103, 188, 245);
+}
+.goal{
+    background-color: rgb(0, 255, 128);
+}
+.goal-area{
+    grid-column: 9/13;
+    grid-row: 9/13;
+    position:absolute;
+    top:52%;
+    left:50.1%;
+    transform: translate(-50%, -50%);
+}
+.goal-area img{
+    width: 93px;
+    height:98px;
+}
+#mentsd{
+    font-family: Lavishly Yours;
+    font-weight:bold;
+}
+#vég{
+    background-color: rgb(10, 235, 130);
+}
+.grat{
+    color: rgb(236, 72, 72);
+    font-size:50px
+}
+.mentsd{
+    font-size: 30px;
+}
